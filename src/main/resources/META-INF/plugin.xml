@@ -1,0 +1,37 @@
+<idea-plugin>
+    <id>metasync.site.laravel-route-navigator</id>
+    <name>Laravel Route Navigator</name>
+    <version>1.0.0</version>
+    <vendor email="your.email@domain.com" url="https://metasync.site">MetaSync</vendor>
+
+    <description><![CDATA[
+        Navigate to Laravel route definitions by Ctrl+Click on route() calls.
+
+        Features:
+        - Click navigation from route('name') to route definition
+        - Autocompletion for route names
+        - Support for all Laravel route files (web.php, api.php, etc.)
+
+        Compatible with PhpStorm 2025.1+
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <h3>1.0.0</h3>
+        <ul>
+            <li>Initial release</li>
+            <li>Route navigation support</li>
+            <li>Autocompletion for route names</li>
+        </ul>
+    ]]></change-notes>
+
+    <depends>com.jetbrains.php</depends>
+    <depends>com.intellij.modules.platform</depends>
+
+    <idea-version since-build="251" until-build="253.*"/>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <psi.referenceContributor
+                language="PHP"
+                implementation="metasync.site.laravelroute.contributors.LaravelRouteReferenceContributor"/>
+    </extensions>
+</idea-plugin>
