@@ -15,3 +15,6 @@ Easy navigate by route name to controllers.
 - Open phpstorm
 - Settings / Plugins / Install from Disk and select zip file.
 - or use ready build [laravel-route-navigator-1.0.0.zip](laravel-route-navigator-1.0.0.zip)
+
+
+![s1.png](screenshots/s1.png)
